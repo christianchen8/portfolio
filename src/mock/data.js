@@ -16,8 +16,8 @@ export const heroData = {
 };
 
 // ABOUT DATA
-const cvEn = `"https://drive.google.com/file/d/1fTlzWGaV0UbC11q4K76IJouE4oV79cQf/view?usp=sharing"`;
-const cvEs = `"https://drive.google.com/file/d/1Ry4lWGRYY756sXW8L8_z27BLFLMQa12a/view?usp=sharing"`;
+const cvEn = `https://drive.google.com/file/d/1fTlzWGaV0UbC11q4K76IJouE4oV79cQf/view?usp=sharing`;
+const cvEs = `https://drive.google.com/file/d/1Ry4lWGRYY756sXW8L8_z27BLFLMQa12a/view?usp=sharing`;
 
 export const aboutData = {
   img: 'perfil.JPG',
@@ -33,7 +33,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'budweiser.png',
-    title: 'CCONCURSO MESSI 644 | BUDWEISER',
+    title: 'CONCURSO MESSI 644 | BUDWEISER',
     info:
       'Desarrollo de página web para el Sorteo de productos de Budweiser Chile, tanto para escritorio como mobile responsive.',
     info2: 'Tecnologías utilizadas: React, Firebase, Ant-Design',
@@ -76,7 +76,7 @@ export const projectsData = [
 // CONTACT DATA
 export const contactData = {
   cta: 'Y si trabajamos juntos?...',
-  btn: 'Hablemos!',
+  btn: 'Hablemos',
   email: 'chenchristian@outlook.com',
 };
 
