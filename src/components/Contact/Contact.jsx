@@ -24,6 +24,11 @@ const Contact = () => {
               {btn}
             </a>
           </div>
+          {/* <div style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </div> */}
         </Fade>
       </Container>
     </section>
