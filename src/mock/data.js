@@ -20,7 +20,7 @@ const cvEn = `https://drive.google.com/file/d/1fTlzWGaV0UbC11q4K76IJouE4oV79cQf/
 const cvEs = `https://drive.google.com/file/d/1Ry4lWGRYY756sXW8L8_z27BLFLMQa12a/view?usp=sharing`;
 
 export const aboutData = {
-  img: 'perfil.JPG',
+  img: 'https://i.imgur.com/dpdnKCd.jpg',
   paragraphOne: 'Hola! 👋🏼',
   paragraphTwo: 'Soy Desarrollador Fullstack y Abogado',
   paragraphThree:
@@ -32,7 +32,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'budweiser.png',
+    img: 'https://i.imgur.com/oAvvRIY.png',
     title: 'CONCURSO MESSI 644 | BUDWEISER',
     info:
       'Desarrollo de página web para el Sorteo de productos de Budweiser Chile, tanto para escritorio como mobile responsive.',
@@ -42,7 +42,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'itesa.png',
+    img: 'https://i.imgur.com/s2nmhWr.png',
     title: 'TALENTOS 2020 | ITESA',
     info:
       'Aplicación desarrollada de manera grupal dentro del Coding Bootcamp a favor de la empresa Itesa para la gestión de trabajo con freelancers. ',
@@ -53,7 +53,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'sovietica.png',
+    img: 'https://i.imgur.com/GVbAdMD.png',
     title: 'SOVIETICA INDUMENTARIA | E-COMMERCE',
     info:
       'E-commerce de venta de indumentaria unisex creado de manera grupal, utilizando React-Redux, MongoDB, Material UI, y Bootstrap 4, entre otras.',
@@ -63,7 +63,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'omdb.png',
+    img: 'https://i.imgur.com/pZGtxe7.png',
     title: 'OMDB',
     info:
       'Página web para buscar películas y series, con funciones para registrarse y poder guardar en favoritos.',
