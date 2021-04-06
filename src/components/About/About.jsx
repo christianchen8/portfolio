@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import style from './About.module.css';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
@@ -32,7 +33,7 @@ const About = () => {
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
                 <AboutImg alt="profile picture" filename={img} />
-                <img src={img} alt="" style={{ height: '50vh' }} />
+                <img src={img} alt="" className={style.images} />
               </div>
             </Fade>
           </Col>

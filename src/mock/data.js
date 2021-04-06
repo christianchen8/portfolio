@@ -85,8 +85,8 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'instagram',
-      url: 'https://www.instagram.com/christiaanchen/',
+      name: 'whatsapp',
+      url: 'https://wa.link/ve24l1',
     },
     {
       id: nanoid(),

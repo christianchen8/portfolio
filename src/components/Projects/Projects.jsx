@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 // import ProjectImg from '../Image/ProjectImg';
+import style from './Projects.module.css';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -99,7 +100,7 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <img src={img} alt="" style={{ height: '45vh', width: '100%' }} />
+                            <img src={img} alt="" className={style.images} />
                           </div>
                         </Tilt>
                       </a>
