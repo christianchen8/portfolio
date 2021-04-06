@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 import style from './Navbar.module.css';
@@ -17,28 +17,79 @@ import style from './Navbar.module.css';
 // };
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth > 769) {
+      setIsDesktop(true);
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+      setIsDesktop(false);
+    }
+  }, []);
+  console.log(style.menuToggle);
+
   return (
     <Fade bottom duration={1000} delay={300} distance="0px">
       <div className={style.menuToggle}>
-        <input type="checkbox" />
+        <input
+          type="checkbox"
+          checked={open}
+          onClick={() => {
+            setOpen(!open);
+          }}
+        />
 
         <span />
         <span />
         <span />
 
         <ul className={style.menu}>
-          <a href="#hero">
+          <Link
+            to="hero"
+            smooth
+            duration={1000}
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
             <li>Home</li>
-          </a>
-          <a href="#about">
+          </Link>
+
+          <Link
+            to="about"
+            smooth
+            duration={1000}
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
             <li>Sobre Mí</li>
-          </a>
-          <a href="#projects">
+          </Link>
+          <Link
+            to="projects"
+            smooth
+            duration={1000}
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
             <li>Proyectos</li>
-          </a>
-          <a href="#contact">
+          </Link>
+          <Link
+            to="contact"
+            smooth
+            duration={1000}
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
             <li>Contacto</li>
-          </a>
+          </Link>
         </ul>
       </div>
     </Fade>
