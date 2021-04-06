@@ -6,7 +6,7 @@ import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { title, name, subtitle, sub1, sub2, sub3, cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -33,9 +33,23 @@ const Header = () => {
           </Fade>
 
           <br />
-          <Zoom right cascade>
-            {subtitle}
-          </Zoom>
+          {isDesktop ? (
+            <Zoom right cascade>
+              {subtitle}
+            </Zoom>
+          ) : (
+            <>
+              <Zoom right cascade>
+                {sub1}
+              </Zoom>
+              <Zoom right cascade>
+                {sub2}
+              </Zoom>
+              <Zoom right cascade>
+                {sub3}
+              </Zoom>
+            </>
+          )}
         </h1>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">

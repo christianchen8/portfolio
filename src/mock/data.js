@@ -12,6 +12,9 @@ export const heroData = {
   title: 'Hola! 👋🏼, soy',
   name: 'Christian Chen',
   subtitle: 'Fullstack Developer y Abogado.',
+  sub1: 'Fullstack ',
+  sub2: 'Developer y ',
+  sub3: 'Abogado.',
   cta: 'Conoceme',
 };
 
