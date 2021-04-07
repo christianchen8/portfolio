@@ -152,6 +152,6 @@ body {
 
 @media only screen and (max-width: 600px) {
   .menuToggle {
-    position: relative;
+    position: absolute;
   }
 }
